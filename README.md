@@ -8,33 +8,24 @@ The solver searches over continuous domains and minimizes the **sum of squared r
 
 ## Problem Formulation
 
-We seek \((x, y, z) \in \mathbb{R}^3\) such that:
+We seek $(x, y, z) \in \mathbb{R}^3$ such that:
 
-\[
+$$
 \begin{aligned}
 f_1(x,y,z;\alpha) &= \alpha x + yx^2 + y^3 + z^3 = 0 \\
 f_2(x,y,z;\beta)  &= \beta y + \sin(y) + 2^{\,y} - z + \log_{10}(|x| + 1) = 0 \\
 f_3(x,y,z;\theta) &= \theta z + y - \left(\frac{\cos(x+y)}{\sin(zy - y^2 + z)} + 2\right) = 0
 \end{aligned}
-\]
+$$
 
 **Objective (fitness to minimize):**
 
-\[
+$$
 E(x,y,z) \;=\; f_1(x,y,z;\alpha)^2 + f_2(x,y,z;\beta)^2 + f_3(x,y,z;\theta)^2
-\]
+$$
 
-A candidate solution with smaller \(E\) better satisfies the system.
+A candidate solution with smaller $E$ better satisfies the system.
 
-
-**Objective (fitness to minimize):**
-\[
-E(x,y,z) \;=\; f_1^2 + f_2^2 + f_3^2
-\]
-
-A candidate solution with smaller \(E\) better satisfies the system.
-
----
 
 ## Method
 
